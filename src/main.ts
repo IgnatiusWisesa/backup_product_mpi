@@ -44,7 +44,6 @@ async function bootstrap() {
   app.use(bugsnagMiddleware.errorHandler);
 
   try {
-    // throw new Error();
   } catch (e) {
     Bugsnag.notify(e);
   }
