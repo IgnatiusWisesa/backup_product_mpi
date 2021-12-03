@@ -151,7 +151,7 @@ export const SuccsessGetProductById = (id) => {
     }
 }
 
-export const SuccsessUpdateProduct = (id) => {
+export function SuccsessUpdateProduct(id) {
     return {
         id: id,
         vendor_id: "vendor123",
