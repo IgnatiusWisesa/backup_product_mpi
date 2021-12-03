@@ -43,11 +43,6 @@ async function bootstrap() {
   app.use(bugsnagMiddleware.requestHandler);
   app.use(bugsnagMiddleware.errorHandler);
 
-  try {
-  } catch (e) {
-    Bugsnag.notify(e);
-  }
-
   await app.listen( process.env.PORT || 3050 );
 }
 bootstrap();
